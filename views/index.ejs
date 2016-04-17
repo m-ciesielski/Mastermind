@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src='jquery.min.js'></script>
+    <script src='/js/skrypt.js'></script>
+  </head>
+  <body>
+    <p>Welcome to <%= title %></p>
+    <p>
+      <form id="start_game_form" onsubmit="return newGame();">
+        <div>
+          <label for="size">Liczba elementów: </label>
+          <input type="number" id="size" />
+        </div>
+        <div>
+          <label for="dim">Liczba kolorów: </label>
+          <input type="number" id="dim" />
+        <div>
+          <label for="max">Maksymalna liczba prób: </label>
+          <input type="number" id="max" />
+        </div>
+        <div>
+          <button type="submit">Graj</button>
+        </div>
+  </form>
+    </p>
+    <div>
+      <form id="game_input"></form>
+    </div>
+    <div>
+      <div id="game_stage"></div>
+    </div>
+  </body>
+</html>
